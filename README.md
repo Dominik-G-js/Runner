@@ -39,13 +39,15 @@ npm run preview
 
 ## Screenshots
 
-Play flow screenshots are included in `screenshots/`:
+![Main menu](screenshots/01-main-menu.png)
 
-- `01-main-menu.png`
-- `02-level-select.png`
-- `03-gameplay-boost.png`
-- `04-pause-menu.png`
-- `05-settings.png`
+![Level select](screenshots/02-level-select.png)
+
+![Gameplay boost](screenshots/03-gameplay-boost.png)
+
+![Pause menu](screenshots/04-pause-menu.png)
+
+![Settings](screenshots/05-settings.png)
 
 ## Known Limitations
 
