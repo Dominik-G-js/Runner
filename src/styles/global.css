@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, ui-rounded, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f3fbff;
+  background: #123142;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --blue: #1687ff;
+  --cyan: #00d8ff;
+  --green: #79ff4f;
+  --red: #ff3355;
+  --orange: #ff6a35;
+  --gold: #ffd43b;
+  --ink: #f4fbff;
+  --dark: #111923;
+  --panel: rgba(17, 25, 35, 0.9);
+  --line: rgba(121, 255, 79, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+
+body {
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 16px;
+  min-height: 48px;
+  padding: 12px 18px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #283446, #111923);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.34), 0 14px 28px rgba(0, 0, 0, 0.28), inset 0 0 0 2px rgba(121, 255, 79, 0.18);
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.34), 0 8px 18px rgba(0, 0, 0, 0.26);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+button.primary {
+  color: #ffffff;
+  background: linear-gradient(180deg, #00d8ff, #165bff);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+button.danger {
+  color: #ffffff;
+  background: linear-gradient(180deg, #ff6a35, #e41f45);
+}
+
+#game-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+}
+
+#ui-root {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+#ui-root button,
+#ui-root input,
+#ui-root select {
+  pointer-events: auto;
+}
